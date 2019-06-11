@@ -1,8 +1,8 @@
-# Welcome to Whack-a-Mole!
+# Welcome to Guac-a-mole!
 
 ![Mole](public/images/mole.png)
 
-A game to whack as many moles as you can, a Makers Academy final project.
+A game to whack as many moles (or avocados?) as you can, a Makers Academy final project.
 
 Created by [Sejin Kim](https://github.com/sejinkay), [Marcus Clairmont](https://github.com/Kintaro-Oe), [Gui Heurich](https://github.com/guilhe0756), [Matvey Sup]()
 
