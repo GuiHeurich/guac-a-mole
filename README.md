@@ -50,6 +50,9 @@ I would like the game to end after I loose three lives
 
 ```
 
+## Work Management
+
+[Trello](https://trello.com/b/NzMChEFe/whack-a-mole)
 
 ## Tech Stack
 
