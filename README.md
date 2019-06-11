@@ -4,14 +4,14 @@
 
 A game to whack as many moles (or avocados?) as you can, a Makers Academy final project.
 
-Created by [Sejin Kim](https://github.com/sejinkay), [Marcus Clairmont](https://github.com/Kintaro-Oe), [Gui Heurich](https://github.com/guilhe0756), [Matvey Sup]()
+Created by [Sejin Kim](https://github.com/sejinkay), [Marcus Clairmont](https://github.com/Kintaro-Oe), [Gui Heurich](https://github.com/guilhe0756), [Matvey Sup](https://github.com/theonemat)
 
 ## MVP requirements
 
 1. A mole appears
 2. You can whack it
-3. You get points
-4. You get 3 lives
+3. You get points if you whack one
+4. You lose the game if you miss it three times
 
 ## User Stories
 
@@ -27,10 +27,6 @@ I would like to be able to click or touch the mole
 As a game player,
 So that I know I've whacked a mole
 I would like the mole to disappear when I click it
-
-As a game player,
-So that I can have an idea of how well I'm doing
-I would like to get points for each mole I whack
 
 As a game player,
 So that I can have an idea of how well I'm doing
