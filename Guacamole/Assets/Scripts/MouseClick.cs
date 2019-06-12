@@ -20,6 +20,7 @@ public class MouseClick : MonoBehaviour
     void OnMouseDown()
     {
         ScoreUpdate.scoreValue += 100;
+        GameControlScript.life -= 1;
         Destroy(gameObject);
     }
 }
