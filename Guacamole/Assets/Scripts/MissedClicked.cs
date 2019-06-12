@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MouseClick : MonoBehaviour
+public class MissedClicked : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -17,9 +17,11 @@ public class MouseClick : MonoBehaviour
         
     }
 
+
+
     void OnMouseDown()
     {
-        ScoreUpdate.scoreValue += 100;
-        Destroy(gameObject);
+        GameControlScript.life -= 1;
+
     }
 }
