@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class MouseClick : MonoBehaviour
 {
     public GameObject mole;
+    public Transform spawnPoint;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +31,12 @@ public class MouseClick : MonoBehaviour
 
     void CreateMole()
     {
+        Respawn();
         mole.gameObject.SetActive(true);
+    }
+
+    public void Respawn()
+    {
+        this.transform.position = spawnPoint.position;
     }
 }
