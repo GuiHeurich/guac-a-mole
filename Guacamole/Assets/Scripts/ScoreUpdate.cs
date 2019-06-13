@@ -22,4 +22,14 @@ public class ScoreUpdate : MonoBehaviour
         score.text = "" + scoreValue;
         
     }
+
+    public void increase(int value) 
+    {
+        scoreValue += value;
+    }
+
+    public int getScoreValue()
+    {
+        return scoreValue;
+    }
 }
