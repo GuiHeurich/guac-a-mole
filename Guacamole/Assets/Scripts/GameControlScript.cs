@@ -10,20 +10,18 @@ public class GameControlScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // unpause/normal timeflow
+        Time.timeScale = 1;
 
-        life = 3;
-        life1.gameObject.SetActive(true);
-        life2.gameObject.SetActive(true);
-        life3.gameObject.SetActive(true);
+        setStartingLives();
+
         gameover.gameObject.SetActive(false);
-        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (life > 3)
-            life = 3;
+        enforceMaximumLives();
 
         switch (life)
         {
@@ -49,15 +47,31 @@ public class GameControlScript : MonoBehaviour
                 life1.gameObject.SetActive(false);
                 life2.gameObject.SetActive(false);
                 life3.gameObject.SetActive(false);
-                GameOver();
+
+                gameOver();
                 break;
         }
     }
 
-    void GameOver()
+    void setStartingLives()
     {
-        gameover.gameObject.SetActive(true);
-        Time.timeScale = 0;
+        life = 3;
+        life1.gameObject.SetActive(true);
+        life2.gameObject.SetActive(true);
+        life3.gameObject.SetActive(true);
     }
 
+    void enforceMaximumLives()
+    {
+        if (life > 3)
+            life = 3;
+    }
+
+    void gameOver()
+    {
+        gameover.gameObject.SetActive(true);
+
+        // freeze timeflow
+        Time.timeScale = 0;
+    }
 }

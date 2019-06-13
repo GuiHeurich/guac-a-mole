@@ -10,7 +10,6 @@ public class MouseClick : MonoBehaviour
     void Start()
     {
         mole.gameObject.SetActive(true);
-
     }
 
     // Update is called once per frame
@@ -23,7 +22,9 @@ public class MouseClick : MonoBehaviour
     {
         ScoreUpdate.scoreValue += 100;
         mole.gameObject.SetActive(false);
-        Invoke("CreateMole", 2);
+
+        // Function is executed after the delay
+        Invoke("CreateMole", 0.8f);
     }
 
     void CreateMole()
