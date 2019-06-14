@@ -20,6 +20,7 @@ public class PlayAgain : MonoBehaviour
     void OnMouseDown()
     {
         SceneManager.LoadScene("PlayScene");
+        ScoreUpdate.scoreValue = 0;
     }
 
 }
