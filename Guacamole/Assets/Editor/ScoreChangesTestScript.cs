@@ -22,7 +22,7 @@ namespace Tests
             Score.increase(100);
 
             //ASSERT 
-            Assert.AreEqual(Score.getScoreValue(), 100);
+            Assert.AreEqual(100, Score.getScoreValue());
 
         }
 
