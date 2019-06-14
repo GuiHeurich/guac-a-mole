@@ -11,7 +11,7 @@ public class MouseClick : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        mole.gameObject.SetActive(true);
+        Invoke("Spawn", Random.Range(3f, 0.3f));
     }
 
     // Update is called once per frame
@@ -26,17 +26,13 @@ public class MouseClick : MonoBehaviour
         mole.gameObject.SetActive(false);
 
         // Function is executed after the delay
-        Invoke("CreateMole", 0.8f);
+        Invoke("Spawn", Random.Range(3f, 0.3f));
     }
 
-    void CreateMole()
+
+    public void Spawn()
     {
-        Respawn();
         mole.gameObject.SetActive(true);
-    }
-
-    public void Respawn()
-    {
         this.transform.position = spawnPoint.position;
     }
 }
