@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameControlScript : MonoBehaviour
 {
@@ -73,5 +74,6 @@ public class GameControlScript : MonoBehaviour
 
         // freeze timeflow
         Time.timeScale = 0;
+        SceneManager.LoadScene("GameoverScene");
     }
 }
