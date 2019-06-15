@@ -1,9 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class MissedClicked : MonoBehaviour
+public class HeartSound : MonoBehaviour
 {
     public new AudioSource audio;
 
@@ -16,14 +15,11 @@ public class MissedClicked : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
-
-
 
     void OnMouseDown()
     {
-        GameControlScript.life -= 1;
         audio.PlayOneShot(audio.clip);
 
     }
