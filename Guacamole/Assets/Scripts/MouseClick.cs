@@ -14,6 +14,8 @@ public class MouseClick : MonoBehaviour
     void Start()
     {
         audio = GetComponent<AudioSource>();
+        mole.gameObject.SetActive(false);
+
         Invoke("Spawn", Random.Range(3f, 0.3f));
     }
 
