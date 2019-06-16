@@ -21,10 +21,12 @@ public class MoleMovement : MonoBehaviour
     {
         if(transform.position == pos1.position)
         {
+            //...wait x seconds then come up
             nextPos = pos2.position; 
         }
         if(transform.position == pos2.position)
         {
+            //...wait x seconds then go down
             nextPos = pos1.position; 
         }
 
