@@ -24,6 +24,14 @@ public class MoleBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        // Need to delay mole if at the bottom wait (i.e. stay there/ don't move) for x seconds
+        // fun speed effect:
+        //if (nextPos == upPos.position)
+        //{
+        //    Invoke("UpdateMovement", 3);
+        //}
+
         UpdateMovement();
     }
 
@@ -46,12 +54,10 @@ public class MoleBehaviour : MonoBehaviour
     {
         if (transform.position == downPos.position)
         {
-            //...wait x seconds then come up
             nextPos = upPos.position;
         }
         if (transform.position == upPos.position)
         {
-            //...wait x seconds then go down
             nextPos = downPos.position;
         }
 
