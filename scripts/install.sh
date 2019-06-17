@@ -27,7 +27,7 @@ install() {
 	download $1
 
 	echo "Installing `basename "$PACKAGE_URL"`"
-  hdiutil $UNITY_DOWNLOAD_CACHE/`basename "$PACKAGE_URL"`
+  hdiutil attach $UNITY_DOWNLOAD_CACHE/`basename "$PACKAGE_URL"`
 	sudo installer -dumplog -package $UNITY_DOWNLOAD_CACHE/`basename "$PACKAGE_URL"` -target /
 }
 
