@@ -1,0 +1,8 @@
+language: objective-c
+osx_image: xcode61
+rvm:
+- 2.1.2
+install:
+- ./scripts/install.sh
+script:
+- ./scripts/build.sh
