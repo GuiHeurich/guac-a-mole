@@ -8,12 +8,16 @@ public class MoleBehaviour : MonoBehaviour
     public Transform spawnPoint;
     public Transform downPos, upPos;
     public float speed;
+    public new AudioSource audio;
+    public bool play = false;
 
     Vector3 nextPos;
 
     // Start is called before the first frame update
     void Start()
     {
+        audio = GetComponent<AudioSource>();
+
         mole.gameObject.SetActive(false);
 
         nextPos = spawnPoint.position;
@@ -31,12 +35,20 @@ public class MoleBehaviour : MonoBehaviour
         //{
         //    Invoke("UpdateMovement", 3);
         //}
+        if (play)
+        {
+            play = false;
+
+            audio.PlayOneShot(audio.clip);
+        }
 
         UpdateMovement();
     }
 
     void OnMouseDown()
     {
+        play = true;
+
         ScoreUpdate.scoreValue += 100;
         mole.gameObject.SetActive(false);
 
