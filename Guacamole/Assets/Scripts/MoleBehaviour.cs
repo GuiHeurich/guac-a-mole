@@ -20,7 +20,7 @@ public class MoleBehaviour : MonoBehaviour
 
         nextPos = spawnPoint.position;
 
-		Invoke("Spawn", Random.Range(10f, 3f));
+		Invoke("Spawn", Random.Range(3f, 0.3f));
 	}
 
 	// Update is called once per frame
