@@ -15,7 +15,6 @@ public class GameControlScript : MonoBehaviour
         Time.timeScale = 1;
 
         setStartingLives();
-
     }
 
     // Update is called once per frame
@@ -69,7 +68,6 @@ public class GameControlScript : MonoBehaviour
 
     void gameOver()
     {
-
         // freeze timeflow
         Time.timeScale = 0;
         SceneManager.LoadScene("GameoverScene");
