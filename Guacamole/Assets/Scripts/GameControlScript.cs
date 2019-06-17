@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameControlScript : MonoBehaviour
 {
-    public GameObject life1, life2, life3, gameover;
+    public GameObject life1, life2, life3;
     public static int life;
 
     // Start is called before the first frame update
@@ -16,7 +16,6 @@ public class GameControlScript : MonoBehaviour
 
         setStartingLives();
 
-        gameover.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -70,7 +69,6 @@ public class GameControlScript : MonoBehaviour
 
     void gameOver()
     {
-        gameover.gameObject.SetActive(true);
 
         // freeze timeflow
         Time.timeScale = 0;
