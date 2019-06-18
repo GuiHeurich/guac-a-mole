@@ -7,9 +7,10 @@ public class MoleBehaviour : MonoBehaviour
 	public GameObject mole;
 	public Transform spawnPoint;
 	public Transform downPos, upPos;
-	public float speed;
+	public float speed = 2;
     public AudioClip WhackSound;
     private bool isAlive = true;
+    private int level;
 
     Vector3 nextPos;
 
@@ -26,15 +27,8 @@ public class MoleBehaviour : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-
-		// Need to delay mole if at the bottom wait (i.e. stay there/ don't move) for x seconds
-		// fun speed effect:
-		//if (nextPos == upPos.position)
-		//{
-		//    Invoke("UpdateMovement", 3);
-		//}
-
 		UpdateMovement();
+        UpdateDifficulty();
 	}
 
 	void OnMouseDown()
@@ -77,9 +71,45 @@ public class MoleBehaviour : MonoBehaviour
 
 	}
 
-	private void OnDrawGizmos()
-	{
-		Gizmos.DrawLine(downPos.position, upPos.position);
-	}
+    public void UpdateDifficulty()
+    {
+        if (ScoreUpdate.scoreValue > 2000 && ScoreUpdate.scoreValue < 3000)
+        {
+            speed = 2.5f; 
+        } else if (ScoreUpdate.scoreValue >= 3000 && ScoreUpdate.scoreValue < 4000)
+        {
+            speed = 3;
+        } else if (ScoreUpdate.scoreValue >= 4000 && ScoreUpdate.scoreValue < 5000)
+        {
+            speed = 3.5f;
+        } else if (ScoreUpdate.scoreValue >= 5000 && ScoreUpdate.scoreValue < 6000)
+        {
+            speed = 4;
+        } else if (ScoreUpdate.scoreValue >= 6000 && ScoreUpdate.scoreValue < 7000)
+        {
+            speed = 4.5f;
+        } else if (ScoreUpdate.scoreValue >= 7000 && ScoreUpdate.scoreValue < 8000)
+        {
+            speed = 5;
+        } else if (ScoreUpdate.scoreValue >= 8000 && ScoreUpdate.scoreValue < 9000)
+        {
+            speed = 5.5f;
+        } else if (ScoreUpdate.scoreValue >= 9000 && ScoreUpdate.scoreValue < 10000)
+        {
+            speed = 6;
+        } else if (ScoreUpdate.scoreValue >= 10000 && ScoreUpdate.scoreValue < 11000)
+        {
+            speed = 6.5f;
+        } else if (ScoreUpdate.scoreValue > 11000)
+        {
+            speed = ScoreUpdate.scoreValue / 1000 * 0.585f;
+        }
+
+    }
+
+    public void OnDrawGizmos()
+    {
+        Gizmos.DrawLine(downPos.position, upPos.position);
+    }
 
 }
