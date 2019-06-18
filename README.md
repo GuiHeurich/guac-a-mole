@@ -1,6 +1,7 @@
 # Welcome to Guac-a-mole!
 
-![Mole](public/images/mole.png)
+![featuregraphic](https://user-images.githubusercontent.com/46751197/59685019-1fd9b880-91d3-11e9-9079-69ec5a000cc3.jpg)
+
 
 A game to whack as many moles (or avocados?) as you can, a Makers Academy final project.
 
@@ -99,5 +100,4 @@ To run tests:
 
 
 
-![featuregraphic](https://user-images.githubusercontent.com/46751197/59685019-1fd9b880-91d3-11e9-9079-69ec5a000cc3.jpg)
 
