@@ -59,6 +59,18 @@ I would like the game to end after I loose three lives
 Unity (Version 2019.3.0a5)
 C#
 
+
+## How to Install and Open
+
+#### You will need to first install Unity Hub + Unity version 2019.1.6f1
+
+* Clone or download the repo
+* Open Unity Hub and click add on the projects section
+* Navigate to where guac-a-mole is located 
+* Inside guac-a-mole click on **Guacamole** and click open
+* Back in Unity Hub double click on Guacamole to open in Unity
+
+
 ## Testing
 
 #### NUnit Unity intergrated tests
