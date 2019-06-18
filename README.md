@@ -69,3 +69,7 @@ To run tests:
 * Click Window -> General -> Test Runner
 * Click on Edit mode 
 * Run all
+
+<img width="306" alt="Screen Shot 2019-06-18 at 12 11 00" src="https://user-images.githubusercontent.com/46751197/59677919-fdd83a00-91c2-11e9-8198-e6994e04e007.png">
+
+<img width="187" alt="Screen Shot 2019-06-18 at 12 18 29" src="https://user-images.githubusercontent.com/46751197/59678038-4263d580-91c3-11e9-9871-0d8056026c5d.png">
