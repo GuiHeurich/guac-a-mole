@@ -58,3 +58,14 @@ I would like the game to end after I loose three lives
 
 Unity (Version 2019.3.0a5)
 C#
+
+## Testing
+
+#### NUnit Unity intergrated tests
+
+To run tests:
+
+* Open Guacamole in Unity
+* Click Window -> General -> Test Runner
+* Click on Edit mode 
+* Run all
