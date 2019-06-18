@@ -56,13 +56,17 @@ I would like the game to end after I loose three lives
 
 ## Tech Stack
 
-Unity (Version 2019.3.0a5)
+Unity (Version 2019.1.6f1)
 C#
 
 
 ## How to Install and Open
 
 #### You will need to first install Unity Hub + Unity version 2019.1.6f1
+
+ Unity Hub : https://store.unity.com/?_ga=2.160639613.1161690214.1560771273-267498223.1560249307
+ 
+ __In the install section on Unity Hub click add and download 2019.1.6f1__
 
 * Clone or download the repo
 * Open Unity Hub and click add on the projects section
