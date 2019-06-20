@@ -95,7 +95,7 @@ To run tests:
 
 ## Gameplay
 
-**Features :
+**Features :**
 
 * Whackin moles
 * Loosing lives
