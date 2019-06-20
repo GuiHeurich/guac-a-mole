@@ -32,4 +32,9 @@ public class ScoreUpdate : MonoBehaviour
     {
         return scoreValue;
     }
+
+    public void setScoreValue(int value)
+    {
+        scoreValue = value;
+    }
 }

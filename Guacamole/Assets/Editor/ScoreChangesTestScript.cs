@@ -8,21 +8,30 @@ namespace Tests
 {
     public class ScoreChangesTestScript
     {
-        GameObject obj;
-        // A Test behaves as an ordinary method
+        private ScoreUpdate score;
+      
+        [SetUp]
+        public void TestSetup()
+        {
+            score = new ScoreUpdate();
+            //ScoreUpdate Score = score.AddComponent<ScoreUpdate>();
+        }
+
+        [TearDown]
+        public void TestTearDown()
+        {
+            score = null;
+
+        }
         [Test]
         public void ScoreChangesTestScriptSimplePasses()
         {
-            // Use the Assert class to test conditions
-            // SETUP
-            obj = new GameObject();
-            ScoreUpdate Score = obj.AddComponent<ScoreUpdate>();
-
-            //ACT
-            Score.increase(100);
+            //Debug.Log(Score);
+            ////ACT
+            score.increase(100);
 
             //ASSERT 
-            Assert.AreEqual(100, Score.getScoreValue());
+            Assert.AreEqual(100, score.getScoreValue());
 
         }
 
