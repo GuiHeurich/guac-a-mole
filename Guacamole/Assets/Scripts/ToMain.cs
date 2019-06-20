@@ -17,7 +17,7 @@ public class ToMain : MonoBehaviour
 
     }
 
-    void OnMouseDown()
+    public void ToMainClicked()
     {
         SceneManager.LoadScene("MainScene");
     }

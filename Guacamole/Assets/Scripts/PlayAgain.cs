@@ -17,10 +17,9 @@ public class PlayAgain : MonoBehaviour
 
     }
 
-    void OnMouseDown()
+    public void PlayAgainClicked()
     {
         SceneManager.LoadScene("PlayScene");
         ScoreUpdate.scoreValue = 0;
     }
-
 }

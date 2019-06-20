@@ -17,7 +17,7 @@ public class ToCredit : MonoBehaviour
 
     }
 
-    void OnMouseDown()
+    public void ToCreditClicked()
     {
         SceneManager.LoadScene("CreditScene");
     }

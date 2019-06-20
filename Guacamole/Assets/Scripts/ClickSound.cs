@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class ClickSound : MonoBehaviour
 {
-    public new AudioSource audio;
+    public AudioClip ButtonSound;
 
-    // Start is called before the first frame update
     void Start()
     {
-        audio = GetComponent<AudioSource>();
+
     }
 
     // Update is called once per frame
@@ -18,9 +17,8 @@ public class ClickSound : MonoBehaviour
 
     }
 
-    void OnMouseDown()
+    public void ClickedSound()
     {
-        audio.PlayOneShot(audio.clip);
-
+        this.gameObject.GetComponent<AudioSource>().PlayOneShot(ButtonSound);
     }
 }
