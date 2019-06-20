@@ -1,6 +1,5 @@
 # Welcome to Guac-a-mole!
 
-![Build Status](http://unitybuildbadge.azurewebsites.net/api/status/76f04452-ff56-4bbe-b532-3c3440196760)
 ![featuregraphic](https://user-images.githubusercontent.com/46751197/59685019-1fd9b880-91d3-11e9-9079-69ec5a000cc3.jpg)
 
 
