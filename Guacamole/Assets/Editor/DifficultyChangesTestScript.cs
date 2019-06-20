@@ -8,27 +8,34 @@ namespace Tests
 {
     public class DifficultyChangesTestScript
     {
-        GameObject mole;
-        GameObject score;
-        public float speed = 11.7f;
+        private GameObject mole;
+        private GameObject score;
+        private float speed;
         // A Test behaves as an ordinary method
         [SetUp]
         public void TestSetup()
         {
-            
+            mole = new GameObject();
+            score = new GameObject();
+            speed = 11.7f;
+        }
+
+        [TearDown]
+        public void TestTearDown()
+        {
+            mole = null;
+            speed = 2;
         }
 
         [Test]
-        public void ScoreChangesTestScriptSimplePasses()
+        public void DifficultyChangesTestScriptSimplePasses()
         {
-            mole = new GameObject();
             MoleBehaviour Mole = mole.AddComponent<MoleBehaviour>();
-
-            score = new GameObject();
             ScoreUpdate Score = score.AddComponent<ScoreUpdate>();
             Score.increase(20000);
             Mole.UpdateDifficulty();
             Assert.AreEqual(speed, Mole.speed);
+            Score.setScoreValue(0);
 
         }
 
@@ -36,7 +43,7 @@ namespace Tests
         // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
         // `yield return null;` to skip a frame.
         [UnityTest]
-        public IEnumerator ScoreChangesTestScriptWithEnumeratorPasses()
+        public IEnumerator DifficultyChangesTestScriptWithEnumeratorPasses()
         {
             // Use the Assert class to test conditions.
             // Use yield to skip a frame.

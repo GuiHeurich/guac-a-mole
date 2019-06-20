@@ -109,7 +109,6 @@ public class MoleBehaviour : MonoBehaviour
 
     public void OnDrawGizmos()
     {
-        Gizmos.DrawLine(downPos.position, upPos.position);
+        //Gizmos.DrawLine(downPos.position, upPos.position);
     }
-
 }
