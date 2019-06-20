@@ -93,8 +93,28 @@ To run tests:
 
 
 
+## Gameplay
+
+**Features :
+
+* Whackin moles
+* Loosing lives
+* Get points for whackin moles
+* Every 1000 points the game gets harder
+* Special messagees for good scores 
+* Pause button
+
+![Screenshot_20190620-150756](https://user-images.githubusercontent.com/46751197/59859141-22bfdf00-9374-11e9-8f18-9e04c77b9729.jpg)
+
+![Screenshot_20190620-150827](https://user-images.githubusercontent.com/46751197/59859181-30756480-9374-11e9-87d2-b29eb27b8923.jpg)
+
+![Screenshot_20190620-150837](https://user-images.githubusercontent.com/46751197/59859202-39fecc80-9374-11e9-8f0c-f72cdce45744.jpg)
 
 
+
+##      
+
+![Screenshot_20190620-150759](https://user-images.githubusercontent.com/46751197/59859241-4b47d900-9374-11e9-8e07-edc56aab4eff.jpg)
 
 
 
