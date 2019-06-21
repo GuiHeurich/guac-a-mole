@@ -7,6 +7,8 @@ A game to whack as many moles (or avocados?) as you can, a Makers Academy final 
 
 Created by [Sejin Kim](https://github.com/sejinkay), [Marcus Clairmont](https://github.com/Kintaro-Oe), [Gui Heurich](https://github.com/guilhe0756), [Matvey Sup](https://github.com/theonemat)
 
+[DOWNLOAD IT FROM GOOGLE PLAY:](https://play.google.com/store/apps/details?id=com.GuacaMole.WhackaMole)
+
 ## MVP requirements
 
 1. A mole appears
@@ -57,8 +59,12 @@ I would like the game to end after I loose three lives
 
 ## Tech Stack
 
-Unity (Version 2019.1.6f1)
-C#
+Language:C#
+Testing Framework: NUnit (inside Unity Test Runner)
+Editor, Debugger and Linter: Visual Studio Community
+Game Engine: Unity (Version 2019.1.6f1)
+Continuous Integration: Unity Cloud Build
+Deployment: Google Play Store
 
 
 ## How to Install and Open
@@ -104,20 +110,12 @@ To run tests:
 * Special messagees for good scores 
 * Pause button
 
-![Screenshot_20190620-150756](https://user-images.githubusercontent.com/46751197/59859141-22bfdf00-9374-11e9-8f18-9e04c77b9729.jpg)
+## Screenshots
 
-![Screenshot_20190620-150827](https://user-images.githubusercontent.com/46751197/59859181-30756480-9374-11e9-87d2-b29eb27b8923.jpg)
+![Webp net-resizeimage](https://user-images.githubusercontent.com/39172881/59919393-3b390380-941f-11e9-93c4-3a33872ff438.jpg)
 
-![Screenshot_20190620-150837](https://user-images.githubusercontent.com/46751197/59859202-39fecc80-9374-11e9-8f0c-f72cdce45744.jpg)
+![Webp net-resizeimage (1)](https://user-images.githubusercontent.com/39172881/59919415-45f39880-941f-11e9-8ea7-be3e08a72920.jpg)
 
+![Webp net-resizeimage (2)](https://user-images.githubusercontent.com/39172881/59919424-4ab84c80-941f-11e9-8e8b-5ff9baac64c7.jpg)
 
-
-##      
-
-![Screenshot_20190620-150759](https://user-images.githubusercontent.com/46751197/59859241-4b47d900-9374-11e9-8e07-edc56aab4eff.jpg)
-
-
-
-
-
-
+![Webp net-resizeimage (3)](https://user-images.githubusercontent.com/39172881/59919477-6a4f7500-941f-11e9-8b56-21745f7bb773.jpg)
