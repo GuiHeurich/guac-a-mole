@@ -59,13 +59,13 @@ I would like the game to end after I loose three lives
 
 ## Tech Stack
 
-|---------:|---------------:|
-|Language: | C#
-|Testing Framework: | NUnit (inside Unity Test Runner)
-|Editor, Debugger and Linter: | Visual Studio Community
-|Game Engine: | Unity (Version 2019.1.6f1)
-|Continuous Integration: | Unity Cloud Build
-|Deployment: | Google Play Store
+--- | ---
+Language: | C#
+Testing Framework: | NUnit (inside Unity Test Runner)
+Editor, Debugger and Linter: | Visual Studio Community
+Game Engine: | Unity (Version 2019.1.6f1)
+Continuous Integration: | Unity Cloud Build
+Deployment: | Google Play Store
 
 
 ## How to Install and Open
